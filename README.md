@@ -1,21 +1,54 @@
-# px.watermark
+# Activate Linux Watermark
 
-A bottom-right "Activate Linux" watermark overlay for Omarchy Quickshell.
+A persistent, bottom-right "Activate Linux" watermark overlay for the
+Omarchy shell, built with Quickshell's `PanelWindow` and `WlrLayershell`.
+Inspired by [eww_activate-linux](https://github.com/Nycta-b424b3c7/eww_activate-linux).
+
+[![Watermark preview](https://github.com/pxllbt/watermark/raw/main/assets/previews/preview.png)](https://github.com/pxllbt/watermark/blob/main/assets/previews/preview.png)
+
+## Features
+
+- Always visible on every Hyprland workspace
+- Hides automatically when a window is focused on the active workspace
+- Bottom-right placement with configurable margins
+- No Eww or additional dependencies — pure Quickshell/QML
+- 50% transparent white text, subtitle font size
+- Per-workspace hiding via `Hyprland.toplevels` model
+
+## Requirements
+
+- Omarchy 4.x (Quickshell 0.3+)
+- Hyprland with `wlr-layer-shell` support
 
 ## Install
 
-1. Clone this repository into `~/.config/omarchy/plugins/px.watermark/`.
-2. Register the plugin in `~/.config/omarchy/shell.json` under `plugins` by adding `"id": "px.watermark"`.
-3. Restart Omarchy shell with `omarchy restart shell`.
+```
+omarchy plugin add https://github.com/pxllbt/watermark.git --enable
+omarchy plugin enable pix.watermark
+omarchy restart shell
+```
 
-## Usage
+## Update
 
-The watermark appears on the bottom-right of every Hyprland workspace. It hides automatically when a window is focused on the current workspace.
+```
+omarchy plugin update pix.watermark
+```
 
-## Building from source
+## Development
 
-This plugin is a single QML file using Quickshell's built-in `PanelWindow` and `WlrLayershell` API. No Eww or additional dependencies are required.
+```
+omarchy plugin validate .
+```
+
+## Files
+
+| Path | Purpose |
+|------|---------|
+| `manifest.json` | Plugin manifest (schema v1, overlay) |
+| `Watermark.qml` | PanelWindow overlay with WlrLayershell |
+| `README.md` | This file |
+| `LICENSE` | MIT license |
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
