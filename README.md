@@ -1,4 +1,4 @@
-# Activate Linux Watermark
+# Watermark
 
 ![Omarchy](https://img.shields.io/badge/Omarchy-4.x-1e66f5?style=flat-square)
 ![QML](https://img.shields.io/badge/QML-Quickshell-1e66f5?style=flat-square)
@@ -50,7 +50,6 @@ omarchy plugin validate .
 |------|---------|
 | `manifest.json` | Plugin manifest (schema v1, overlay) |
 | `Watermark.qml` | PanelWindow overlay with WlrLayershell |
-| `README.md` | This file |
 | `LICENSE` | MIT license |
 
 ## License

@@ -1,1 +1,16 @@
-{"schemaVersion":1,"id":"pix.watermark","name":"watermark","version":"1.0.0","author":"pixllbeat","license":"MIT","description":"Bottom-right 'Activate Linux' watermark overlay","kinds":["overlay"],"keepLoaded":true,"entryPoints":{"overlay":"Watermark.qml"}}
+{
+  "schemaVersion": 1,
+  "id": "pix.watermark",
+  "name": "Watermark",
+  "version": "1.0.0",
+  "author": "pxllbt",
+  "license": "MIT",
+  "description": "Bottom-right 'Activate Linux' watermark overlay",
+  "kinds": [
+    "overlay"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Watermark.qml"
+  }
+}
