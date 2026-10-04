@@ -1,7 +1,7 @@
 # Watermark
 
 ![Omarchy](https://img.shields.io/badge/Omarchy-4.x-1e66f5?style=flat-square)
-![QML](https://img.shields.io/badge/QML-Quickshell-1e66f5?style=flat-square)
+![Quickshell](https://img.shields.io/badge/Quickshell-1e66f5?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-1e66f5?style=flat-square)
 
 A persistent, bottom-right "Activate Linux" watermark overlay for the
