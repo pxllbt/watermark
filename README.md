@@ -14,7 +14,7 @@ Inspired by [eww_activate-linux](https://github.com/Nycta-b424b3c7/eww_activate-
 
 - Always visible on every Hyprland workspace
 - Hides automatically when a window is focused on the active workspace
-- Bottom-right placement with configurable margins
+- Bottom-right placement with margins
 - No Eww or additional dependencies — pure Quickshell/QML
 - 50% transparent white text, subtitle font size
 - Per-workspace hiding via `Hyprland.toplevels` model
@@ -44,12 +44,23 @@ omarchy plugin update pix.watermark
 omarchy plugin validate .
 ```
 
+### Tests
+
+```
+tests/smoke.sh
+```
+
+Validates the manifest schema, key file presence, and the update checker's
+JSON output. Full QML load tests require the Omarchy shell context.
+
 ## Files
 
 | Path | Purpose |
 |------|---------|
 | `manifest.json` | Plugin manifest (schema v1, overlay) |
 | `Watermark.qml` | PanelWindow overlay with WlrLayershell |
+| `scripts/check-update.sh` | Version/update check emitting JSON |
+| `tests/smoke.sh` | Smoke test for manifest + scripts |
 | `LICENSE` | MIT license |
 
 ## License
