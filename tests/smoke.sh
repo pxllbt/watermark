@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # pix.watermark smoke test — validates manifest structure + update checker.
-# Full QML load tests require the omacry shell context (injected props, display server).
+# Full QML load tests require the omarchy shell context (injected props, display server).
 # Run this from within omarchy for end-to-end testing.
 set -euo pipefail
 
