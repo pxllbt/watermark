@@ -1,27 +1,27 @@
-name: "🐛 Bug Report"
-description: "File a bug report to help improve Watermark"
+name: "Bug Report"
+description: "Report a Watermark issue"
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report an issue! Please check existing issues before submitting.
+        Thanks for flagging something. Check existing issues first if you can.
 
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: A clear and concise description of what the bug is.
-      placeholder: "When opening a fullscreen application, ..."
+      label: What's wrong
+      description: Describe the bug.
+      placeholder: "When switching workspaces, ..."
     validations:
       required: true
 
   - type: textarea
     id: reproduction
     attributes:
-      label: Steps to Reproduce
-      description: Steps to reproduce the behavior.
+      label: Steps to reproduce
+      description: How do you trigger it?
       placeholder: |
         1. Enable pix.watermark
         2. Switch workspaces
@@ -32,20 +32,19 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: Expected Behavior
-      description: What did you expect to happen instead?
+      label: What you expected
+      description: What should have happened instead?
     validations:
       required: true
 
   - type: textarea
     id: system_info
     attributes:
-      label: System Information
-      description: Output of `hyprctl version`, `quickshell --version`, and Linux distribution.
+      label: Environment
+      description: Output of `hyprctl version` and Omarchy version.
       render: shell
       placeholder: |
+        Omarchy: 4.x
         Hyprland: 0.44.0
-        Quickshell: 0.3.1
-        Distro: Arch Linux
     validations:
       required: true

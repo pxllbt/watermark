@@ -1,18 +1,6 @@
-## Summary
+## What this PR changes
 
-<!-- Provide a brief overview of the changes in this PR. -->
-
-## Changes
-
-- 
-
-## Verification & Testing
-
-- [ ] Automated smoke tests pass (`bash tests/smoke.sh`)
-- [ ] Validated overlay placement and visibility in Hyprland
-- [ ] Verified automatic hiding when windows occupy the active workspace
-- [ ] Zero idle CPU performance verified (~0.0%)
-
-## Related Issues
-
-<!-- Closes #123 -->
+## Checklist
+- [ ] Manifest validates (`omarchy plugin validate .`)
+- [ ] Smoke tests pass (`bash tests/smoke.sh`)
+- [ ] Overlay placement and auto-hide verified in Hyprland

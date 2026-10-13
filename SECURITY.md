@@ -1,25 +1,17 @@
 # Security Policy
 
-## Supported Versions
+## Supported versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
-| < 1.0   | :x:                |
+| Version | Status |
+| --- | --- |
+| 1.0.x   | Current, receiving updates |
 
-## Security Model
+## What to know
 
-Watermark (`pix.watermark`) is a pure client overlay for Quickshell:
-1. **No System Privilege**: The overlay requires no root privileges, creates no privileged sockets, and performs no filesystem mutations.
-2. **Click-Through Transparency**: By declaring `exclusionMode: ExclusionMode.Ignore`, the layer never captures pointer input, cannot intercept keystrokes, and cannot hijack user clicks.
-3. **Passive Update Checking**: Update notifications run read-only version checks without executing unverified remote payloads.
+Watermark is a simple client overlay — no root privileges, no privileged sockets, no filesystem mutations. It uses `ExclusionMode.Ignore` so it never captures pointer input or keystrokes. Update checks are read-only version lookups; no remote code execution.
 
-## Reporting a Vulnerability
+## Reporting
 
-If you discover a security issue or unexpected behavior in Watermark, please report it responsibly:
+Something not right? Don't open a public issue. Either [open a private advisory](https://github.com/pxllbt/watermark/security/advisories/new) or message me on GitHub with reproduction details and your environment.
 
-1. **Do not open a public issue.**
-2. Send an email to the repository maintainer via their GitHub profile or open a private advisory at [GitHub Security Advisories](https://github.com/pxllbt/watermark/security/advisories/new).
-3. Include reproduction details and your environment configuration.
-
-We appreciate your help keeping Watermark safe for everyone.
+Thanks for looking out for this.

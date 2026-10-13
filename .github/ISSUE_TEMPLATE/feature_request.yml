@@ -1,33 +1,26 @@
-name: "✨ Feature Request"
-description: "Suggest an idea or enhancement for Watermark"
+name: "Feature Request"
+description: "Suggest an idea for Watermark"
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Have an idea to make Watermark even better? We love community feedback!
+        Have an idea? Let me know.
 
   - type: textarea
     id: problem
     attributes:
-      label: Problem or Motivation
-      description: Is your feature request related to a problem or limitation?
-      placeholder: "I would like to customize..."
+      label: What you want
+      description: What would you like to improve or add?
+      placeholder: "I'd like to suggest a..."
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: Proposed Solution
-      description: Describe the solution you'd like to see.
-      placeholder: "Add option to customize..."
+      label: Details
+      description: Anything specific about how it should work.
     validations:
       required: true
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives Considered
-      description: Any alternative solutions or features you've considered.
